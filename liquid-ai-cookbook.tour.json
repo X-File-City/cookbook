@@ -1,0 +1,208 @@
+{
+  "id": "liquid-ai-cookbook-tour",
+  "title": "Liquid AI Cookbook Tour",
+  "description": "Explore the Liquid AI Cookbook — a collection of examples and tutorials for building local AI applications with LFM models and the LEAP SDK",
+  "version": "1.0.0",
+  "audience": "Developers & AI Engineers",
+  "prerequisites": ["Basic understanding of AI/ML concepts", "Familiarity with Python or JavaScript"],
+  "steps": [
+    {
+      "id": "step-1-welcome",
+      "title": "Welcome to the Cookbook",
+      "description": "The Liquid AI Cookbook contains 16 ready-to-run examples and 7 fine-tuning notebooks for building AI applications that run locally — no cloud required. The two main areas are examples/ (applications) and finetuning/ (model customization).",
+      "estimatedTime": 60,
+      "focusDirectory": "",
+      "colorMode": "fileTypes",
+      "highlightLayers": [
+        {
+          "id": "main-areas",
+          "name": "Main Areas",
+          "color": "#8b5cf6",
+          "items": [
+            { "path": "examples", "type": "directory" },
+            { "path": "finetuning", "type": "directory" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        }
+      ]
+    },
+    {
+      "id": "step-2-audio-examples",
+      "title": "Audio & Voice Applications",
+      "description": "These examples showcase LFM audio models for speech recognition, voice chat, and real-time transcription. Includes a voice-controlled car cockpit demo, a CLI transcription tool, browser-based WebGPU audio, and a voice chat interface.",
+      "estimatedTime": 90,
+      "focusDirectory": "examples",
+      "colorMode": "fileTypes",
+      "highlightLayers": [
+        {
+          "id": "audio-examples",
+          "name": "Audio & Voice",
+          "color": "#3b82f6",
+          "items": [
+            { "path": "examples/audio-car-cockpit", "type": "directory" },
+            { "path": "examples/audio-transcription-cli", "type": "directory" },
+            { "path": "examples/audio-webgpu-demo", "type": "directory" },
+            { "path": "examples/voice-chat", "type": "directory" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        }
+      ],
+      "interactiveActions": [
+        {
+          "type": "explore",
+          "description": "Explore the audio car cockpit example",
+          "target": "examples/audio-car-cockpit"
+        }
+      ]
+    },
+    {
+      "id": "step-3-vision-examples",
+      "title": "Vision & Document Processing",
+      "description": "Vision-language models power these examples: extract structured data from invoices, identify car makes from photos, caption video in real-time with WebGPU, and automate browser interactions using visual understanding.",
+      "estimatedTime": 90,
+      "focusDirectory": "examples",
+      "colorMode": "fileTypes",
+      "highlightLayers": [
+        {
+          "id": "vision-examples",
+          "name": "Vision & Documents",
+          "color": "#10b981",
+          "items": [
+            { "path": "examples/invoice-parser", "type": "directory" },
+            { "path": "examples/car-maker-identification", "type": "directory" },
+            { "path": "examples/vl-webgpu-demo", "type": "directory" },
+            { "path": "examples/browser-control", "type": "directory" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        }
+      ],
+      "interactiveActions": [
+        {
+          "type": "explore",
+          "description": "Explore the invoice parser example",
+          "target": "examples/invoice-parser"
+        }
+      ]
+    },
+    {
+      "id": "step-4-agent-examples",
+      "title": "Agents & Reasoning",
+      "description": "These examples demonstrate tool-calling, multi-step reasoning, and autonomous agents. The flight search assistant shows tool use with reasoning, the local coding assistant runs on-device, and the meeting agents handle transcription and analysis.",
+      "estimatedTime": 90,
+      "focusDirectory": "examples",
+      "colorMode": "fileTypes",
+      "highlightLayers": [
+        {
+          "id": "agent-examples",
+          "name": "Agents & Reasoning",
+          "color": "#f59e0b",
+          "items": [
+            { "path": "examples/flight-search-assistant", "type": "directory" },
+            { "path": "examples/local-coding-assistant", "type": "directory" },
+            { "path": "examples/meeting-intelligence-agent", "type": "directory" },
+            { "path": "examples/meeting-summarization", "type": "directory" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        }
+      ],
+      "interactiveActions": [
+        {
+          "type": "explore",
+          "description": "Explore the flight search assistant",
+          "target": "examples/flight-search-assistant"
+        }
+      ]
+    },
+    {
+      "id": "step-5-creative-examples",
+      "title": "Creative & Cross-Platform",
+      "description": "Creative applications combining multiple modalities: a browser game controlled by hand gestures and voice, a Korean-English translator, and an iOS app built with the LEAP SDK for native mobile deployment.",
+      "estimatedTime": 90,
+      "focusDirectory": "examples",
+      "colorMode": "fileTypes",
+      "highlightLayers": [
+        {
+          "id": "creative-examples",
+          "name": "Creative & Cross-Platform",
+          "color": "#ec4899",
+          "items": [
+            { "path": "examples/hand-voice-racer", "type": "directory" },
+            { "path": "examples/lfm2-english-to-korean", "type": "directory" },
+            { "path": "examples/leap-slogan-example-ios", "type": "directory" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        }
+      ]
+    },
+    {
+      "id": "step-6-localcowork",
+      "title": "LocalCowork — Full-Stack AI Agent",
+      "description": "The most sophisticated example in the cookbook. LocalCowork is a complete desktop AI agent built with Tauri 2.0 (Rust) + React, featuring 75+ tools across 14 MCP servers, a dual-model orchestrator, and human-in-the-loop confirmations. It demonstrates production-grade patterns for local AI applications.",
+      "estimatedTime": 120,
+      "focusDirectory": "examples/localcowork",
+      "colorMode": "fileTypes",
+      "interactiveActions": [
+        {
+          "type": "explore",
+          "description": "Explore the LocalCowork project structure",
+          "target": "examples/localcowork"
+        }
+      ]
+    },
+    {
+      "id": "step-7-finetuning",
+      "title": "Fine-Tuning Resources",
+      "description": "Seven Jupyter notebooks cover the full spectrum of model customization: supervised fine-tuning (SFT) with Unsloth and TRL, vision-language model fine-tuning, GRPO reinforcement learning for reasoning, and continued pre-training for translation and domain knowledge.",
+      "estimatedTime": 90,
+      "focusDirectory": "finetuning",
+      "colorMode": "fileTypes",
+      "highlightLayers": [
+        {
+          "id": "notebooks-layer",
+          "name": "Training Notebooks",
+          "color": "#6366f1",
+          "items": [
+            { "path": "finetuning/notebooks", "type": "directory" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        },
+        {
+          "id": "scripts-layer",
+          "name": "Production Scripts",
+          "color": "#ef4444",
+          "items": [
+            { "path": "finetuning/scripts", "type": "directory" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        }
+      ],
+      "interactiveActions": [
+        {
+          "type": "explore",
+          "description": "Browse the fine-tuning notebooks",
+          "target": "finetuning/notebooks"
+        }
+      ]
+    },
+    {
+      "id": "step-8-explore",
+      "title": "Start Exploring",
+      "description": "You've seen the full landscape of the Liquid AI Cookbook! Each example is self-contained with its own README, dependencies, and build instructions. Pick an area that interests you — audio, vision, agents, or fine-tuning — and dive in. Check the main README.md for setup guides and links to documentation.",
+      "estimatedTime": 60,
+      "focusDirectory": "",
+      "colorMode": "fileTypes"
+    }
+  ],
+  "metadata": {
+    "author": "File City Tours",
+    "createdAt": "2026-03-19",
+    "tags": ["onboarding", "liquid-ai", "cookbook", "local-ai", "lfm"]
+  }
+}
